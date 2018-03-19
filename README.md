@@ -7,8 +7,7 @@ OpenCV Lecture and Study ( OpenCV 강좌 / 공부 )
 <br>  Subscribe youtube and Press 'I like' button Please ^^
 * Github : https://github.com/MareArts/OpenCV_Lecture
 * OpenCV Lecture blog : http://cvlecture.marearts.com/
-<br> more detail explanation about chapter
-
+<br> more detail explanation 
 <br>
 And <br>
 My computer vision study blog : http://study.marearts.com/
