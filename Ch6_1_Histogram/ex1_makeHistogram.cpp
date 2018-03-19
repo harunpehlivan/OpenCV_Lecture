@@ -1,4 +1,4 @@
-
+//http://study.marearts.com/2017/12/gray-image-histogram-without-opencv.html
 #include "opencv2/opencv.hpp"
 #include "opencv2\highgui.hpp"
 #include <iostream>
@@ -38,7 +38,6 @@ int main(int, char)
 	const int bufferSize = 256;
 
 	//histogram buffer
-
 	unsigned int Histogram_buffer[bufferSize];
 	memset(Histogram_buffer, 0, sizeof(unsigned int) * bufferSize);
 
@@ -61,24 +60,23 @@ int main(int, char)
 	Mat histo = Mat::zeros(Size(bufferSize, maxValue + 1), CV_8U);
 
 	//rect
-	/*for (int i = 0; i< bufferSize; ++i)
+	for (int i = 0; i< bufferSize; ++i)
 	{
 		for (int j = 0; j < Histogram_buffer[i]; ++j)
 		{
 			histo.at< unsigned char >(maxValue - j, i) = 255;
 		}
-	}*/
-
-	//line
-	
-	for (int i = 1; i< bufferSize; ++i)
-	{
-		int y1 = maxValue - Histogram_buffer[i - 1];
-		int x1 = i - 1;
-		int y2 = maxValue - Histogram_buffer[i];
-		int x2 = i;
-		line(histo, Point(x1, y1), Point(x2, y2), CV_RGB(255, 255, 255), 1);
 	}
+
+	////line
+	//for (int i = 1; i< bufferSize; ++i)
+	//{
+	//	int y1 = maxValue - Histogram_buffer[i - 1];
+	//	int x1 = i - 1;
+	//	int y2 = maxValue - Histogram_buffer[i];
+	//	int x2 = i;
+	//	line(histo, Point(x1, y1), Point(x2, y2), CV_RGB(255, 255, 255), 1);
+	//}
 	
 
 	namedWindow("histo", 0);

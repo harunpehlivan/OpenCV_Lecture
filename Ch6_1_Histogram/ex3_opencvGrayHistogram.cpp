@@ -41,13 +41,12 @@ int main()
 					 //ex) 2 -> 0~128, 129~256, ex)16 -> 0 ~ 15, 16 ~ 31..., 
 	int channels[] = { 0 }; //index of channel
 	int histSize[] = { hbins };
-	float hranges[] = { 0, 255 };
+	float hranges[] = { 0, 100 };
 	const float* ranges[] = { hranges };
 
 	MatND Hist;
-
-	vector<Mat> bgr_planes;
-	split(imgA, bgr_planes);
+	//vector<Mat> bgr_planes;
+	//split(imgA, bgr_planes);
 
 	//cal histogram & normalization
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////

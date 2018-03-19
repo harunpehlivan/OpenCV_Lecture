@@ -1,4 +1,4 @@
-
+//http://study.marearts.com/2013/09/opencv-make-histogram-and-draw-example.html
 #include "opencv2/opencv.hpp"
 #include "opencv2\highgui.hpp"
 #include <iostream>
